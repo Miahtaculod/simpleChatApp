@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="login.js"></script>
+
+</head>
+
+<body style="color: rgb(0, 0, 0); background-color:#ffffff">
+    <div class="containet mt5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5"><strong>Chat App</strong></h1>
+        </div>
+        <div class="main row justify-content-center">
+            <center>
+            <form action="public/index.html" method="POST">
+                <div class="form-control">
+                    <label for="username" class="mb-3">Username</label>
+                    <input
+                        type="text"
+                        name="Username" 
+                        id="username"
+                        placeholder="Enter username"
+                        required
+                    />
+                    <br>
+                    <label for="username">Password</label>
+                    <input
+                        type="password"
+                        name="Password"
+                        id="password"
+                        placeholder="Enter password"
+                        required
+                    />
+                </div>
+                <button class="btn btn-primary" id="">Login</button> 
+             
+                <script> 
+                  const { spawn } = require('child_process'); 
+                 
+                  document.getElementById('run-button').addEventListener('click', () => { 
+                    spawn('node', ['index.html']); 
+                  }); 
+                </script>
+            </form>
+            </center>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
+
+
